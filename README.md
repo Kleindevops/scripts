@@ -17,7 +17,7 @@
 | 运行时临时目录     | 脚本复制到 `./Ubuntu_24.04/` 等目录，退出自动 `rm -rf`               |
 | 职责分离清晰       | `main.sh` → 拷贝 → 菜单 → 系统信息，各自独立，改起来丝滑            |
 
-### 目录结构（最终版）
+### 目录结构
 
 ```bash
 linux-tools-framework/
@@ -33,7 +33,7 @@ linux-tools-framework/
     ├── 系统优化.sh
     └── ...
 ```
-### 目录结构（最终版）
+### Template/OS_INFO.SH
 
 ```bash
 #!/bin/bash

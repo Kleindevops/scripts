@@ -94,7 +94,6 @@ echo "================================================="
 
 
 
-read -n1 -p "按任意键返回主菜单..."
 EOF
 
 chmod +x "$filepath"
@@ -106,4 +105,6 @@ echo "分类     ：$category"
 echo "适配     ：$tag"
 echo "描述     ：$desc"
 echo
-echo "下次运行 main.sh → 「$category」分类里立刻可见！"
+
+echo "正在进入 Template 目录..."
+read -n1 -p "脚本创建完成，按任意键进入 Template 目录编写代码..." && cd "$TEMPLATE_DIR" && exec bash

@@ -25,7 +25,7 @@ echo -e "\n\033[33m→ 正在更新软件源...\033[0m"
 sudo apt update
 
 echo -e "\033[33m→ 正在安装 15 个工具...\033[0m"
-sudo apt install -y curl wget git vim htop tree unzip zip p7zip-full net-tools tmux iftop iotop dnsutils filezilla
+sudo apt install -y timeshift curl wget git vim htop tree unzip zip p7zip-full net-tools tmux iftop iotop dnsutils filezilla
 
 echo
 echo -e "\033[32m╔══════════════════════════════╗\033[0m"

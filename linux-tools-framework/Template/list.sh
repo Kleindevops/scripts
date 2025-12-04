@@ -107,4 +107,3 @@ echo "适配     ：$tag"
 echo "描述     ：$desc"
 echo
 echo "下次运行 main.sh → 「$category」分类里立刻可见！"
-read -n1 -p "按任意键结束..."

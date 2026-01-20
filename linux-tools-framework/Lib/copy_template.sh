@@ -14,7 +14,9 @@ for f in "$DIR"/Template/*.sh; do
     tag=$(sed -n '3p' "$f" | sed 's/^ *# *//; s/ *$//' | xargs)
 
     # 只有写 default 或者精确等于 Ubuntu_24.04 才被拷贝
-    if [[ "$tag" == "default" || "$tag" == "$SYS_DIR" ]]; then
+     if [[ "$tag" == "default" || \
+          "$SYS_DIR" == "$tag"* || \
+          "${SYS_DIR,,}" =~ "${tag,,}" ]]; then
         mkdir -p "$FULL_DIR/$category"
         cp -f "$f" "$FULL_DIR/$category/"
     fi

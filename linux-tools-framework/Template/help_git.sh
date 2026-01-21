@@ -50,4 +50,8 @@ echo
 echo -e "\033[37m   提示：最常用的就是这三连：\033[0m"
 echo -e "\033[1;37m   git add -A && git commit -m \"xxx\" && git push\033[0m"
 echo
+## 查看文件是否被git 提交过 
+git ls-files --error-unmatch 你的文件名
 
+如果命令有输出 → 文件已被 Git 追踪（曾经 add 过）
+如果报错 “error: pathspec ... did not match any file(s) known to git” → 文件从未被 Git 追踪
